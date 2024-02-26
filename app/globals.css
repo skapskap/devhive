@@ -8,7 +8,7 @@ body {
 }
 
 .cl-internal-b3fm6y {
-  background-color: #ff7000;
+  background: linear-gradient(129deg, #ff7000 0%, #e2995f 100%) !important;
 }
 
 @layer utilities {
