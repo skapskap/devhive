@@ -7,6 +7,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.cl-internal-b3fm6y {
+  background-color: #ff7000;
+}
+
 @layer utilities {
   .flex-center {
     @apply flex justify-center items-center;
