@@ -1,3 +1,27 @@
 {
-    "path-intellisense.showHiddenFiles": true
+  "path-intellisense.showHiddenFiles": true,
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.addMissingImports": "explicit"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.preferences": {},
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.run": "onSave",
+  "editor.wordWrap": "on",
+  "workbench.editor.enablePreview": false,
+  "svelte.enable-ts-plugin": true,
+  "editor.linkedEditing": true,
+  "git.autofetch": true
 }
