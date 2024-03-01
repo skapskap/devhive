@@ -25,7 +25,7 @@ const questions = [
     },
     upvotes: 10,
     views: 100,
-    answers: [{}],
+    answers: [],
     createdAt: new Date("2021-09-01T00:00:00.000Z"),
   },
   {
@@ -43,7 +43,7 @@ const questions = [
     },
     upvotes: 15,
     views: 200,
-    answers: [{}],
+    answers: [],
     createdAt: new Date("2022-06-15T00:00:00.000Z"),
   },
   {
@@ -61,7 +61,7 @@ const questions = [
     },
     upvotes: 20,
     views: 300,
-    answers: [{}],
+    answers: [],
     createdAt: new Date("2022-03-10T00:00:00.000Z"),
   },
 ];

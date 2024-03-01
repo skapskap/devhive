@@ -5,37 +5,37 @@ import RenderTag from "./RenderTag";
 
 const hotQuestions = [
   {
-    _id: 1,
+    _id: "1",
     title:
       "How do you optimize Dockerfile configuration for a Next.js application to minimize build times?",
   },
   {
-    _id: 2,
+    _id: "2",
     title:
       "What are the best practices for implementing hot reload in Golang web applications?",
   },
   {
-    _id: 3,
+    _id: "3",
     title: "How to set up hot reload in a Haskell project for web development?",
   },
   {
-    _id: 4,
+    _id: "4",
     title:
       "What are the best practices for integrating Tailwind CSS with Next.js in Docker environments?",
   },
   {
-    _id: 5,
+    _id: "5",
     title:
       "How do you effectively reduce the size of Docker images for Node.js applications?",
   },
 ];
 
 const popularTags = [
-  { _id: 1, name: "Next.js", totalQuestions: 5 },
-  { _id: 2, name: "Docker", totalQuestions: 4 },
-  { _id: 3, name: "Golang", totalQuestions: 3 },
-  { _id: 4, name: "Haskell", totalQuestions: 2 },
-  { _id: 5, name: "Node.js", totalQuestions: 1 },
+  { _id: "1", name: "Next.js", totalQuestions: 5 },
+  { _id: "2", name: "Docker", totalQuestions: 4 },
+  { _id: "3", name: "Golang", totalQuestions: 3 },
+  { _id: "4", name: "Haskell", totalQuestions: 2 },
+  { _id: "5", name: "Node.js", totalQuestions: 1 },
 ];
 
 const RightSideBar = () => {
