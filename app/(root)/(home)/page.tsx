@@ -5,68 +5,12 @@ import NoResult from "@/components/shared/NoResult";
 import LocalSearchbar from "@/components/shared/search/LocalSearchbar";
 import { Button } from "@/components/ui/button";
 import { HomePageFilters } from "@/constants/filters";
+import { getQuestions } from "@/lib/actions/question.action";
 import Link from "next/link";
 
-const questions = [
-  {
-    _id: "1",
-    title: "How to create a new project in Next.js?",
-    tags: [
-      {
-        _id: "1",
-        name: "next.js",
-      },
-      { _id: "2", name: "web development" },
-    ],
-    author: {
-      _id: "1",
-      name: "João Victor",
-      picture: "https://example.com/path/to/picture1.jpg",
-    },
-    upvotes: 10,
-    views: 100,
-    answers: [],
-    createdAt: new Date("2021-09-01T00:00:00.000Z"),
-  },
-  {
-    _id: "2",
-    title: "How to manage state in React functional components?",
-    tags: [
-      { _id: "1", name: "react" },
-      { _id: "2", name: "state management" },
-      { _id: "3", name: "hooks" },
-    ],
-    author: {
-      _id: "2",
-      name: "Maria Silva",
-      picture: "https://example.com/path/to/picture2.jpg",
-    },
-    upvotes: 15,
-    views: 200,
-    answers: [],
-    createdAt: new Date("2022-06-15T00:00:00.000Z"),
-  },
-  {
-    _id: "3",
-    title: "How to implement user authentication in Django?",
-    tags: [
-      { _id: "1", name: "django" },
-      { _id: "2", name: "python" },
-      { _id: "3", name: "authentication" },
-    ],
-    author: {
-      _id: "3",
-      name: "Ahmed Khan",
-      picture: "https://example.com/path/to/picture3.jpg",
-    },
-    upvotes: 20,
-    views: 300,
-    answers: [],
-    createdAt: new Date("2022-03-10T00:00:00.000Z"),
-  },
-];
+export default async function Home() {
+  const result = await getQuestions({});
 
-export default function Home() {
   return (
     <>
       <div className="flex w-full flex-col-reverse justify-between gap-4 sm:flex-row sm:items-center">
@@ -97,8 +41,8 @@ export default function Home() {
       <HomeFilters />
 
       <div className="mt-10 flex w-full flex-col gap-6">
-        {questions.length > 0 ? (
-          questions.map((question) => (
+        {result.questions.length > 0 ? (
+          result.questions.map((question) => (
             <QuestionCard
               key={question._id}
               _id={question._id}
