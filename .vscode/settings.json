@@ -16,7 +16,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "emmet.preferences": {},
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "catppuccin-latte",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.run": "onSave",
   "editor.wordWrap": "on",
