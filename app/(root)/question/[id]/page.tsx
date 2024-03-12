@@ -11,7 +11,16 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const page = async ({ params, searchParams }) => {
+interface Props {
+  params: {
+    id: string;
+  };
+  searchParams: {
+    [key: string]: string | undefined;
+  };
+}
+
+const QuestionDetails = async ({ params, searchParams }: Props) => {
   const { userId: clerkId } = auth();
 
   let mongoUser;
@@ -102,4 +111,4 @@ const page = async ({ params, searchParams }) => {
   );
 };
 
-export default page;
+export default QuestionDetails;
