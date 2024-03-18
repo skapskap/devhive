@@ -9,7 +9,6 @@ import { toggleSaveQuestion } from "@/lib/actions/user.action";
 import { formatNumber } from "@/lib/utils";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import path from "path";
 // import { useRouter } from "next/router";
 import React from "react";
 
